@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USO DE SONIDOS"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+ />
+    <TextView
+        android:id="@+id/txtsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttitulo"
+        android:text="Reproductor de Audio en Android"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:textColor="@color/morado"
+        android:layout_marginTop="40dp"
+        > </TextView>
+
+    <GridLayout
+        android:id="@+id/glimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtsub">
+    <ImageView
+        android:id="@+id/imb1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/boton_reproducir"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imb2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/boton_detener"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"/>
+</GridLayout>
+
+    <Button
+        android:id="@+id/btnRemoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/glimg"
+        android:layout_marginTop="80dp"
+        android:text="AUDIO REMOTO">
+    </Button>
+    <Button
+        android:id="@+id/btnLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRemoto"
+        android:layout_marginTop="10dp"
+        android:text="AUDIO LOCAL">
+    </Button>
+
+
+</LinearLayout>

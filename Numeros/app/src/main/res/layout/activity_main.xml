@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo1">
+
+    <TextView
+    android:id="@+id/tituloo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tutor Virtual de Niños"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/ninos"
+        android:layout_below="@id/tituloo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupLenguaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/RBespanol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Números español"
+            android:checked="true"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/RBingles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Números inglés"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_below="@id/RadioGroupLenguaje"
+        android:backgroundTint="#0B4297"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo2">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Números en Inglés"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:padding="12dp">
+        <ImageButton
+            android:id="@+id/one"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num1"
+            android:onClick="playSound"
+            android:contentDescription="one"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/two"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="two"
+            android:onClick="playSound"
+            android:src="@drawable/num2"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/three"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num3"
+            android:onClick="playSound"
+            android:contentDescription="three"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/four"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num4"
+            android:onClick="playSound"
+            android:contentDescription="four"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/five"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num5"
+            android:onClick="playSound"
+            android:contentDescription="five"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/six"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num6"
+            android:onClick="playSound"
+            android:contentDescription="six"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/seven"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num7"
+            android:onClick="playSound"
+            android:contentDescription="seven"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/eight"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num8"
+            android:onClick="playSound"
+            android:contentDescription="eight"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/nine"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num9"
+            android:onClick="playSound"
+            android:contentDescription="nine"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/ten"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/num10"
+            android:onClick="playSound"
+            android:contentDescription="ten"
+            android:scaleType="fitCenter"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/Btnregresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CDDC39"
+        android:text="REGRESAR"
+        android:textColor="#101010"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
